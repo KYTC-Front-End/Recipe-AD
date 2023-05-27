@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'lato';   
+}
+
+header{
+    width:100%;
+    /* 3*16=48px */
+    height: 3rem;
+    /* Top Right Bottom Left */
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Qwigley', cursive;
+    font-size: 50px;
+    color: #FF0000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    padding: 0.5em;
+  }
+  
+  nav ul li a span.active{
+    position: relative;
+  }
+
+  nav ul li a span.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: red; 
+  }
+
+ .header-icon{
+    font-size: 21px;
+    display: flex;
+    /* 0.6*20=12px */
+    gap: 0.6em;
+  }
+
+.hero-container{
+    background-image: url(../image/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title{
+    font-size: 30px;
+    font-family: 'Merriweather';
+    color: rgba(255, 255, 255, 0.904);
+    line-height: 4rem;
+    letter-spacing: 1.2px;
+}
+
+.hero-contant{
+  background-color: #07f02e;
+  width: 25rem;
+  height: 5vh;
+  display: flex;
+}
+
+.search-input{
+    flex: 1;
+    border: none;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.search-button{
+  background-color: #FF0000;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.featured-container{
+  margin-top: 10vh;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 3.7rem;
+}
+
+.featured-title{
+  font-size: 23px;
+  font-family: 'Merriweather';
+  color: #000;
+  line-height: 2rem;
+  letter-spacing: 1.2px;
+}
+
+.container-cards{
+  width: 100%;
+  height: 60vh;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-contant-card{
+ width: 17.13rem;
+ border: 1px solid #000;
+ border-radius: 10px;
+ position: relative;
+}
+
+.contant-card{
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 20px;
+}
+
+.contant-card h2{
+  font-size: 13px;
+  font-family: 'Merriweather';
+}
+
+.contant-card p{
+  font-size: 11px;
+}
+
+.rateing{
+  text-align: center;
+  line-height: 40px;
+}
+
+.rate-review{
+  font-size: 10px;
+}
+
+.favorite-icon{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  z-index: 1;
+}
+
+#favorite-icon1{
+ color: #FF0000;
+}
+
+.categories-container{
+  margin-top: 10vh;
+  height: 155vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3.7rem;
+  background-color: rgba(255, 246, 197, 0.5);
+}
+
+#nav-categories{
+  margin-top: 5vh;
+}
+
+#categories-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#card{
+  margin-top: 10vh;
+}
+
+.Footer-Container{
+  width: 100%;
+  height: 18vh;
+  background-color: #8B4513;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.7rem;
+}
+
+.Footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.footer-nav{
+  color: #fff;
+}
+
+#logo-footer{
+  font-size: 60px;
+  color: #fff;
+}
+
+.hr{
+  margin-top: 3px;
+  margin-bottom: 8px;
+  background-color: rgba(204, 204, 204, 0.651);
+  border: none;
+}
+
+.copyright{
+ font-size: 12px;
+ text-align: center;
+ color: #fff;
+}
+
+
+
+  
+  
+  
+  
+  
+  
+

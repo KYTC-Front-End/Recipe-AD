@@ -6,9 +6,322 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@300&family=Montserrat:wght@200&family=Qwigley&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/623677c6b3.js"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/favicon-io/favicon.ico">
     <title>Recipe</title>
 </head>
 <body>
+    <header>
+        <h1 class="logo">Recipe</h1>
+
+        <nav>
+            <ul>
+              <li><a href="#"> <span class="active">Home</span></a></li>
+              <li><a href="#">Category</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <section class="header-icon">
+            <i class="fa fa-search" style="color: #000000;"></i>
+            <i class="fa-regular fa-heart" style="color: #000;"></i>
+            <i class="fa fa-sign-in-alt" style="color: #000000;"></i>
+        </section>   
+    </header>
     
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <h1 class="hero-title">Find a recipes</h1> </br>
+        <form class="hero-contant">
+            <input type="search" class="search-input" placeholder="Search Recipe...">
+            <button type="submit" class="search-button"><i class="fa fa-search" style="color: #fff;"></i></button>
+        </form>
+    </section>
+
+    <!-- Featured Recipe -->
+    <section class="featured-container">
+        <h1 class="featured-title">Featured Recipe</h1>
+        <h6 class="featured-subtitle">Our best recipes, just choose the recipe, you will find its way
+        </h6>
+        <section class="container-cards">
+            <section class="featured-contant-card">
+                <img src="./assets/image/card1.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon" id="favorite-icon1"><i class="fas fa-heart favorite-icon"></i></span>
+                <section class="contant-card">
+                    <h2>Shrimp Fettuccine Alfredo</h2>
+                    <p>Pasta with some Parmesan Roasted
+                        Potatoes or Crispy Air Fryer Broccoli
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">160 Reviews</span>
+                  </section>    
+            </section>
+
+            <section class="featured-contant-card">
+                <img src="./assets/image/burger.jpg" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>burger Cookies</h2>
+                    <p> Hamburger Cookies are made from Nilla Wafers,
+                        York Peppermint Patties and melted chocolate!
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">156 Reviews</span>
+                  </section>    
+            </section>
+
+            <section class="featured-contant-card">
+                <img src="./assets/image/card3.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Ricotta, Squash and Honey</h2>
+                    <p> Both the vegetables and flatbreads take almost no time to grill, 
+                        making this a breeze to throw 
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">90 Reviews</span>
+                  </section>    
+            </section>
+
+            <section class="featured-contant-card">
+                <img src="./assets/image/card4.jpg" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Birria Tacos</h2>
+                    <p>A very tasty and spicy 
+                        Mexican beef or goat broth that is slow 
+                        cooked until the meat is tender</p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">207 Reviews</span>
+                  </section>    
+            </section>
+                
+
+
+        </section>
+
+    </section>
+
+    <!--  section highlighting different recipe categories -->
+    <section class="categories-container">
+        <h1 class="featured-title">Recipe Categories</h1>
+        <h6 class="featured-subtitle">Our best recipes, just choose the recipe, you will find its way
+        </h6>
+        <nav id="nav-categories">
+            <ul>
+              <li><a href="#"> <span class="active">All</span></a></li>
+              <li><a href="#">Appetizers</a></li>
+              <li><a href="#">Main Dishes</a></li>
+              <li><a href="#">Desserts</a></li>
+            </ul>
+        </nav>
+        <section class="container-cards" id="categories-cards">
+            <section class="featured-contant-card">
+                <img src="./assets/image/Rectangle 155.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon" id="favorite-icon1"><i class="fas fa-heart favorite-icon"></i></span>
+                <section class="contant-card">
+                    <h2>Banana Pancakes</h2>
+                    <p>Pasta with some Parmesan Roasted
+                        Potatoes or Crispy Air Fryer Broccoli
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">160 Reviews</span>
+                </section>    
+            </section>
+
+            <section class="featured-contant-card">
+                <img src="./assets/image/Rectangle 144.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Easy Homemade Pizza Dough</h2>
+                    <p> Hamburger Cookies are made from Nilla Wafers,
+                        York Peppermint Patties and melted chocolate!
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">156 Reviews</span>
+                </section>    
+            </section>
+
+            <section class="featured-contant-card">
+                <img src="./assets/image/Rectangle 161.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Shrimp Scampi with Pasta</h2>
+                    <p> Both the vegetables and flatbreads take almost no time to grill, 
+                        making this a breeze to throw 
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">90 Reviews</span>
+                </section>    
+            </section>
+
+            <section class="featured-contant-card">
+                <img src="./assets/image/Rectangle 200.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Rice with chicken </h2>
+                    <p>A very tasty and spicy 
+                        Mexican beef or goat broth that is slow 
+                        cooked until the meat is tender</p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">207 Reviews</span>
+                </section>    
+            </section>
+            <section class="featured-contant-card" id="card">
+                <img src="./assets/image/Rectangle 156.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Rice Like The Rice At Chipotle</h2>
+                    <p>Pasta with some Parmesan Roasted
+                        Potatoes or Crispy Air Fryer Broccoli
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">160 Reviews</span>
+                </section>    
+            </section>
+
+            <section class="featured-contant-card" id="card">
+                <img src="./assets/image/Rectangle 159.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Air-Fried Crumbed Fish</h2>
+                    <p> Hamburger Cookies are made from Nilla Wafers,
+                        York Peppermint Patties and melted chocolate!
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">156 Reviews</span>
+                </section>    
+            </section>
+
+            <section class="featured-contant-card" id="card">
+                <img src="./assets/image/card3.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Ricotta, Squash and Honey</h2>
+                    <p> Both the vegetables and flatbreads take almost no time to grill, 
+                        making this a breeze to throw 
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">90 Reviews</span>
+                </section>    
+            </section>
+
+            <section class="featured-contant-card" id="card">
+                <img src="./assets/image/card4.jpg" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Birria Tacos</h2>
+                    <p>A very tasty and spicy 
+                        Mexican beef or goat broth that is slow 
+                        cooked until the meat is tender</p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">207 Reviews</span>
+                </section>    
+            </section>
+        </section>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="Footer-Container">
+        <section class="Footer-content">
+            <h1 class="logo" id="logo-footer">Recipe</h1>
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="#" class="footer-nav">Home</a></li>
+                    <li><a href="#" class="footer-nav">Category</a></li>
+                    <li><a href="#" class="footer-nav">Contact</a></li>
+                    <li><a href="#" class="footer-nav">About</a></li>
+                </ul>
+            </nav>
+            <section class="header-icon">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+            </section>
+        </section>
+        <hr/>
+  
+            <section class="footer-copyright">
+            <p class="copyright"> © 2023 Fitenie. All rights reserved</p>
+            </section>
+    </section>
 </body>
 </html>
