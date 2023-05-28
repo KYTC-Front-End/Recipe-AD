@@ -57,10 +57,18 @@ nav ul {
 
  .header-icon{
     font-size: 21px;
-    display: flex;
-    /* 0.6*20=12px */
-    gap: 0.6em;
+    cursor: pointer;
   }
+
+  .menu{
+    list-style: none;
+    padding: 0;
+  }
+  .menu li{
+    display: inline-block;
+    padding: 0.3em;
+  }
+
 
 .hero-container{
     background-image: url(../image/Rectangle\ 6.png);
@@ -83,7 +91,7 @@ nav ul {
 }
 
 .hero-contant{
-  background-color: #07f02e;
+  background-color: #ffffff;
   width: 25rem;
   height: 5vh;
   display: flex;
@@ -106,11 +114,12 @@ nav ul {
 
 .featured-container{
   margin-top: 10vh;
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px 3.7rem;
+  
 }
 
 .featured-title{
@@ -123,7 +132,7 @@ nav ul {
 
 .container-cards{
   width: 100%;
-  height: 60vh;
+  height: 53vh;
   margin-top: 35px;
   display: flex;
   justify-content: space-between;
@@ -174,7 +183,7 @@ nav ul {
 
 .categories-container{
   margin-top: 10vh;
-  height: 155vh;
+  height: 145vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,7 +206,7 @@ nav ul {
 
 .Footer-Container{
   width: 100%;
-  height: 18vh;
+  height: 15vh;
   background-color: #8B4513;
   display: flex;
   flex-direction: column;
@@ -213,6 +222,8 @@ nav ul {
 
 .footer-nav{
   color: #fff;
+  font-size: 15px;
+  padding: 1.5rem;
 }
 
 #logo-footer{
@@ -221,8 +232,6 @@ nav ul {
 }
 
 .hr{
-  margin-top: 3px;
-  margin-bottom: 8px;
   background-color: rgba(204, 204, 204, 0.651);
   border: none;
 }
