@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Recipe Detail </title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:wght@300&family=Montserrat:wght@200&family=Qwigley&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/623677c6b3.js"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/favicon-io/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/details.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+  </head>
+  <body>
+    <body>
+      <!-- start header -->
+      <header>
+          <h1 class="logo">Recipe</h1>
+          <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="recipelist.html">Category</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+            </nav>
+            
+          <section class="header-icon">
+            <form class="hero-contant">
+              <input type="search" class="search-input" placeholder="Search Recipe...">
+              <button type="submit" class="search-button"><i class="fa fa-search" style="color: #fff;"></i></button>
+          </form>
+          <i class="fa-sharp fa-solid fa-heart" style="color: #000000;"></i>
+              <i class="fa fa-sign-in-alt" style="color: #000000;"></i>
+          </section>   
+      </header>
+      <section class="headerdetails">
+      </section>
+      <!-- start Recipe Detail Page -->
+      <section class="Recipe-Detail">
+          <section class="Recipe-Detail-hero">
+            <img src="./assets/image/Recipe-Detail.png" class="Recipe-details-hero-img" />
+            <article class="Recipe-Detail-info">
+              <h2>Banana Pancakes</h2>
+              <p>
+                  These banana pancakes are a delicious, easy weekend breakfast.
+                  They're fluffy, moist, and filled with spiced banana flavor Pass the
+                  maple syrup!
+                  Traditional pancakes are made with refined flour and sugar, then
+                   topped with more sugar in the form of syrup. This creates sugar
+                   and carb-heavy meal that creates blood sugar fluctuations that 
+                  aren't great for health in the short term or long term .
+              </p>
+              <section class="Recipe-Detail-icons">
+                <article class="icons">
+                  <i class="fas fa-clock" style="color:#FF0000"></i>
+                  <h5>prep time</h5>
+                  <p>30 min.</p>
+                </article>
+                <article class="icons">
+                  <i class="far fa-clock" style="color:#FF0000"></i>
+                  <h5>cook time</h5>
+                  <p>15 min.</p>
+                </article>
+                <article class="icons">
+                  <i class="fas fa-user-friends" style="color:#FF0000"></i>
+                  <h5>serving</h5>
+                  <p>6 servings</p>
+                </article>
+              </section>
+              <p class="Recipe-Detail-tags">
+                <button>save  <i class="fa-sharp fa-solid fa-heart" style="color: #E58C07;"></i></button>
+                <button>Rate  <i class="fa-solid fa-star" style="color:#E58C07;"></i></button>
+                <button id="icon-save">Print  <i class="fa-solid fa-print" style="color:white;"></i></button>
+                <button>Share <i class="fa-solid fa-share" style="color:#E58C07"></i> </button>
+              </p>
+            </article>
+          </section>
+          <!-- content -->
+          <section class="Recipe-Detail-content">
+            <article>
+              <h4>Directions</h4>
+              <div class="single-instruction">
+                <step>
+                  <p class="p-step">step 1</p>
+                  <div></div>
+                </step>
+                <p>
+                  Mash the banana. Peel the banana and break it up into several
+                  big chunks in a medium bowl
+               </p>
+              </div>
+              <!-- end of single instruction -->
+              <!-- single instruction -->
+              <div class="single-instruction">
+                <step>
+                  <p class="p-step">step 2</p>
+                  <div></div>
+                </step>
+                <p>
+                  Add flavorings if desired then Stir in the eggs.
+                </p>
+              </div>
+              <!-- end of single instruction -->
+              <!-- single instruction -->
+              <div class="single-instruction">
+                <step>
+                  <p class="p-step">step 3</p>
+                  <div></div>
+                </step>
+                <p>
+                  Heat a pan over medium heat.
+                </p>
+              </div>
+              <div class="single-instruction">
+                  <step>
+                    <p class="p-step">step 4</p>
+                    <div></div>
+                  </step>
+                  <p>
+                      Cook for about 1 minute.
+                  </p>
+                </div>
+                <div class="single-instruction">
+                  <step>
+                    <p class="p-step">step 5</p>
+                    <div></div>
+                  </step>
+                  <p>
+                      Sprinkle with toppings , then Flip the pancakes.
+                  </p>
+                </div>
+              <!-- end of single instruction -->
+            </article>
+            <article class="second-column">
+              <section>
+                <h4>ingredients</h4>
+                <p class="single-ingredient">1 1/2 cups dry pancake mix</p>
+                <p class="single-ingredient">1/2 cup flax seed meal</p>
+                <p class="single-ingredient">1 cup skim milk</p>
+              </section>
+              <divsection>
+                <h4>tools</h4>
+                <p class="single-tool">Hand Blender</p>
+                <p class="single-tool">Large Heavy Pot With Lid</p>
+                <p class="single-tool">Measuring Spoons</p>
+                <p class="single-tool">Measuring Cups</p>
+              </section>
+            </article>
+          </section>
+        </div>
+      </section>
+       <!-- Footer Section -->
+       <section class="Footer-Container">
+        <section class="Footer-content">
+            <h1 class="logo" id="logo-footer">Recipe</h1>
+            <nav id="footer-nav">
+                <ul>
+                    <li><a href="#" class="footer-nav">Home</a></li>
+                    <li><a href="#" class="footer-nav">Category</a></li>
+                    <li><a href="#" class="footer-nav">Contact</a></li>
+                    <li><a href="#" class="footer-nav">About</a></li>
+                </ul>
+            </nav>
+            <section class="header-icon">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-youtube"></i>
+            </section>
+        </section>
+        <hr/>
+  
+            <section class="footer-copyright">
+            <p class="copyright"> © 2023 Fitenie. All rights reserved</p>
+            </section>
+    </section>
+    </body>
+  </html>
