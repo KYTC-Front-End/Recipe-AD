@@ -12,7 +12,6 @@ header{
     /* Top Right Bottom Left */
     padding: 0.5rem 3rem 0.5rem 3rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -29,23 +28,23 @@ nav ul {
     padding: 0;
   }
   
-  nav ul li {
+nav ul li {
     display: inline-block;
     
   }
   
-  nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0.5em;
   }
   
-  nav ul li a span.active{
+nav ul li a span.active{
     position: relative;
   }
 
-  nav ul li a span.active::after {
+nav ul li a span.active::after {
     content: '';
     position: absolute;
     left: 0;
@@ -55,20 +54,19 @@ nav ul {
     background-color: red; 
   }
 
- .header-icon{
-    font-size: 21px;
+.header-icon{
+    font-size: 18px;
     cursor: pointer;
   }
 
-  .menu{
+.menu{
     list-style: none;
     padding: 0;
   }
-  .menu li{
+.menu li{
     display: inline-block;
     padding: 0.3em;
   }
-
 
 .hero-container{
     background-image: url(../image/Rectangle\ 6.png);
@@ -90,21 +88,21 @@ nav ul {
     letter-spacing: 1.2px;
 }
 
-.hero-contant{
+.hero-contant, .header-list-saarch{
   background-color: #ffffff;
   width: 25rem;
   height: 5vh;
   display: flex;
 }
 
-.search-input{
+.search-input, .search-input-list{
     flex: 1;
     border: none;
     padding: 0.5rem 1rem;
     letter-spacing: 0.1rem;
 }
 
-.search-button{
+.search-button, .search-button-list{
   background-color: #FF0000;
   padding: 0.5rem 1.5rem;
   border: none;
@@ -122,7 +120,7 @@ nav ul {
   
 }
 
-.featured-title{
+.featured-title, .categories-title{
   font-size: 23px;
   font-family: 'Merriweather';
   color: #000;
@@ -130,7 +128,7 @@ nav ul {
   letter-spacing: 1.2px;
 }
 
-.container-cards{
+.featured-container-cards, .categories-container-cards{
   width: 100%;
   height: 53vh;
   margin-top: 35px;
@@ -138,11 +136,24 @@ nav ul {
   justify-content: space-between;
 }
 
-.featured-contant-card{
+.categories-container-cards{
+  height: 120vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 10vh;
+}
+
+.featured-contant-card, .categories-contant-card, .list-categories-contant-card{
  width: 17.13rem;
  border: 1px solid #000;
  border-radius: 10px;
  position: relative;
+}
+
+.categories-contant-card{
+  background-color: #ffffffc5;
+  border: none;
 }
 
 .contant-card{
@@ -181,9 +192,37 @@ nav ul {
  color: #FF0000;
 }
 
+.see-more-Btn{
+  width: 100%;
+  height: 8vh;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Btn{
+  background-color: transparent;
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px; 
+  width: 6rem;
+  height: 6vh;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.Btn:hover{
+  background-color: #FF0000;
+  color: #ffffff;
+}
+
 .categories-container{
   margin-top: 10vh;
-  height: 145vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,18 +234,9 @@ nav ul {
   margin-top: 5vh;
 }
 
-#categories-cards{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#card{
-  margin-top: 10vh;
-}
-
 .Footer-Container{
   width: 100%;
-  height: 15vh;
+  height: 17vh;
   background-color: #8B4513;
   display: flex;
   flex-direction: column;
@@ -218,6 +248,13 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+}
+
+.header-icon{
+  width: 6rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-nav{
@@ -232,7 +269,8 @@ nav ul {
 }
 
 .hr{
-  background-color: rgba(204, 204, 204, 0.651);
+  height: 1px;
+  background-color: rgba(204, 204, 204, 0.822);
   border: none;
 }
 
@@ -240,7 +278,126 @@ nav ul {
  font-size: 12px;
  text-align: center;
  color: #fff;
+ margin-top: 5px;
 }
+
+/* Style List Page */
+.header-list-icon{
+  font-size: 18px;
+  cursor: pointer;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-list-saarch{
+  background-color: #ffffff;
+  width: 20rem;
+  height: 5vh;
+  display: flex;
+  border: 1px solid #00000069;
+  border-radius: 5px;
+}
+
+.search-input-list{
+    flex: 1;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+.search-button-list{
+  background-color: #FF0000;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.section-filter-Btn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5vh;
+  padding: 1rem 3.7rem;
+  gap: 1rem;
+}
+
+.filter-btn{
+  background-color: rgba(255, 246, 197, 0.5);
+  color: #8B4513;
+  padding: 0.2rem 0.5rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px; 
+  height: 5vh;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.list-categories-container{
+  margin-top: 5vh;
+  height: 110vh;
+  padding: 1rem 3.7rem;
+  gap: 10rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.hr-list{
+  width: 10rem;
+  margin-top: 0.5rem;
+  height: 1px;
+  background-color: #ff000081;
+  border: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+ul li{
+  padding: 0.2rem;
+}
+
+ul li label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+ul li label .input-checkbox{
+   margin-right: 0.5rem;
+}
+
+.list-para{
+  margin-bottom: 0.5rem;
+  color: #FF0000;
+}
+
+.list-categories-container-cards{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  row-gap: 5vh;
+}
+
+.list-categories-contant-card{
+ width: 15rem;
+}
+
+
+
+
+
 
 
 
