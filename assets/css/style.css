@@ -102,6 +102,7 @@ nav ul {
   border: none;
   cursor: pointer;
   font-size: 13px;
+  outline: none;
 }
 
 .featured-container{
