@@ -115,6 +115,7 @@ nav ul li a span.active::after {
   border: none;
   cursor: pointer;
   font-size: 13px;
+  outline: none;
 }
 
 .featured-container{
