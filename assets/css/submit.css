@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'lato';   
+}
+
+header{
+    width:100%;
+    height: 3rem;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Qwigley', cursive;
+    font-size: 50px;
+    color: #FF0000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+nav ul li {
+    display: inline-block;
+    
+  }
+  
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 0.5em;
+  }
+  
+nav ul li a span.active{
+    position: relative;
+  }
+
+nav ul li a span.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: red; 
+  }
+
+.header-icon{
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+.menu{
+    list-style: none;
+    padding: 0;
+  }
+.menu li{
+    display: inline-block;
+    padding: 0.3em;
+  }
+  #menu-icon{
+    display: none;
+  }
+
+.hero-contant, .header-list-saarch{
+  background-color: #ffffff;
+  width: 25rem;
+  height: 5vh;
+  display: flex;
+}
+
+.search-input, .search-input-list{
+    flex: 1;
+    border: 1px solid gray;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.search-button, .search-button-list{
+  background-color: #FF0000;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+/* start Recipe-contaier-submit */
+
+.submit-title{
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 400;
+} 
+
+.submit-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+.submit-title-details{
+  color:#E58C07;
+  font-size: 600;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+
+.form-submit-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+.material{
+  margin: 10px;
+}
+input[type="text"],
+textarea,input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.upload-photo{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color:#FF0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+}
+
+.agreement label {
+  margin-bottom: 0;
+}
+.Footer-Container {
+  width: 100%;
+  height: 60%;
+  background-color: #8B4513;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.7rem;
+  margin-top: 2rem;
+}
+
+.Footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.header-icon {
+  width: 6rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  color: #fff;
+  font-size: 15px;
+  padding: 1.5rem;
+}
+
+#logo-footer {
+  font-size: 60px;
+  color: #fff;
+}
+
+.hr {
+  height: 1px;
+  background-color: rgba(204, 204, 204, 0.822);
+  border: none;
+}
+
+.copyright {
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  margin-top: 5px;
+}
+
