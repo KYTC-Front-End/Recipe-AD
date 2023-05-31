@@ -16,91 +16,92 @@
     <title>Recipe</title>
 </head>
 <body>
-     <!-- Header Section -->
-     <header>
-      <h1 class="logo">Recipe</h1>
-
-      <nav class="navresponsive">
-          <ul>
-            <li><a href="http://127.0.0.1:5500/Recipe-AD/index.html">Home</a></li>
-            <li><a href="http://127.0.0.1:5500/Recipe-AD/list.html">Category</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#"><span class="active">Submit Recipe</span></a></li>
-          </ul>
-      </nav>
-      <section class="header-list-icon">
-          <ul class="menu">
-              <li>
-                  <form class="header-list-saarch">
-                      <input type="search" class="search-input-list" placeholder="Search Recipe...">
-                      <button type="submit" class="search-button-list"><i class="fa fa-search" style="color: #fff;"></i></button>
-                  </form>
-              </li>
-           
-              <li><i class="fa-regular fa-heart" style="color: #000;"></i></li>
-              <li><i class="fa fa-sign-in-alt" style="color: #000000;"></i></li>
-          </ul>
-      </section>  
-      
-      <i class="fas fa-bars" id="menu-icon"></i>
-  </header>
-
- 
-    <!-- start submit recipe  -->
-  <h2 class="submit-title">Submit Your Recipe</h2>
-  <section class="submit-container">
-    <section class="submit-details-container">
-      <form  class="form-submit-details">
-        <h3 class="submit-title-details"> Recipe Details</h3>
-        <input type="file" id="dishPhoto" name="dishPhoto" accept="image/*" required>
-        <label for="recipeName">Recipe Name *</label>
-        <input type="text" id="recipeName" name="recipeName"  placeholder="Please enter a recipe title. "  required>
-        <label for="prepTime">Preparation Time *</label>
-        <input type="text" id="prepTime" name="prepTime" required>
-        <label for="cookTime">Cooking Time *</label>
-        <input type="text" id="cookTime" name="cookTime" required>
-        <label for="NumberofServings ">Number of Servings *</label>
-        <input type="text" id="NumberofServings" name="NumberofServings" required>
-      </form>
-    </section>
-    <section class="upload-photo">
-      <form class="form-submit-details">
-        <label for="ingredients">Ingredients *</label>
-        <textarea id="ingredients" name="ingredients" rows="4"  placeholder="Please enter your recipe Ingredients." required></textarea>
-        <label for="instructions">Directions *</label>
-        <textarea id="instructions" name="instructions" rows="6" placeholder="Please enter your recipe directions." required></textarea>
-        <section class="agreement">
-          <input type="checkbox" id="materialsRelease" name="materialsRelease" required>
-          <label class="material">  I am 18 years of age or older and I have read and agree to the Materials Release</label>
-      </section>
-        <input type="submit" value="Submit Recipe">
-
-      </form>
-    </section>
-</section>
-<!-- Footer Section -->
-<section class="Footer-Container">
-    <section class="Footer-content">
-      <h1 class="logo" id="logo-footer">Recipe</h1>
-      <nav id="footer-nav">
-        <ul>
-          <li><a href="#" class="footer-nav">Home</a></li>
-          <li><a href="#" class="footer-nav">Category</a></li>
-          <li><a href="#" class="footer-nav">Contact</a></li>
-          <li><a href="#" class="footer-nav">About</a></li>
-        </ul>
-      </nav>
-      <section class="header-icon">
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-youtube"></i>
-      </section>
-    </section>
-    <hr />
-
-    <section class="footer-copyright">
-      <p class="copyright"> © 2023 Fitenie. All rights reserved</p>
-    </section>
-  </section>
-</body>
-</html>
+    <body>
+        <!-- Header Section -->
+        <header>
+         <h1 class="logo">Recipe</h1>
+   
+         <nav class="navresponsive" id="navsubmit">
+             <ul>
+               <li><a href="http://127.0.0.1:5500/Recipe-AD/index.html">Home</a></li>
+               <li><a href="http://127.0.0.1:5500/Recipe-AD/list.html">Category</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#"><span class="active">Submit Recipe</span></a></li>
+             </ul>
+         </nav>
+         <section class="header-list-icon">
+             <ul class="menu">
+                 <li>
+                     <form class="header-list-saarch">
+                         <input type="search" class="search-input-list" placeholder="Search Recipe...">
+                         <button type="submit" class="search-button-list"><i class="fa fa-search" style="color: #fff;"></i></button>
+                     </form>
+                 </li>
+              
+                 <li><i class="fa-regular fa-heart" style="color: #000;"></i></li>
+                 <li><i class="fa fa-sign-in-alt" style="color: #000000;"></i></li>
+             </ul>
+         </section>  
+         
+         <i class="fas fa-bars" id="menu-icon"></i>
+     </header>
+   
+    
+       <!-- start submit recipe  -->
+     <h2 class="submit-title">Submit Your Recipe</h2>
+     <section class="submit-container">
+       <section class="submit-details-container">
+         <form  class="form-submit-details">
+           <h3 class="submit-title-details"> Recipe Details</h3>
+           <input type="file" id="dishPhoto" name="dishPhoto" accept="image/*" required>
+           <label for="recipeName">Recipe Name *</label>
+           <input type="text" id="recipeName" name="recipeName"  placeholder="Please enter a recipe title. "  required>
+           <label for="prepTime">Preparation Time *</label>
+           <input type="text" id="prepTime" name="prepTime" required>
+           <label for="cookTime">Cooking Time *</label>
+           <input type="text" id="cookTime" name="cookTime" required>
+           <label for="NumberofServings ">Number of Servings *</label>
+           <input type="text" id="NumberofServings" name="NumberofServings" required>
+         </form>
+       </section>
+       <section class="upload-photo">
+         <form class="form-submit-details">
+           <label for="ingredients">Ingredients *</label>
+           <textarea id="ingredients" name="ingredients" rows="4"  placeholder="Please enter your recipe Ingredients." required></textarea>
+           <label for="instructions">Directions *</label>
+           <textarea id="instructions" name="instructions" rows="6" placeholder="Please enter your recipe directions." required></textarea>
+           <section class="agreement">
+             <input type="checkbox" id="materialsRelease" name="materialsRelease" required>
+             <label class="material">  I am 18 years of age or older and I have read and agree to the Materials Release</label>
+         </section>
+           <input type="submit" value="Submit Recipe">
+   
+         </form>
+       </section>
+   </section>
+   <!-- Footer Section -->
+   <section class="Footer-Container">
+       <section class="Footer-content">
+         <h1 class="logo" id="logo-footer">Recipe</h1>
+         <nav id="footer-nav">
+           <ul>
+             <li><a href="#" class="footer-nav">Home</a></li>
+             <li><a href="#" class="footer-nav">Category</a></li>
+             <li><a href="#" class="footer-nav">Contact</a></li>
+             <li><a href="#" class="footer-nav">About</a></li>
+           </ul>
+         </nav>
+         <section class="header-icon">
+           <i class="fab fa-instagram"></i>
+           <i class="fab fa-facebook"></i>
+           <i class="fab fa-youtube"></i>
+         </section>
+       </section>
+       <hr />
+   
+       <section class="footer-copyright">
+         <p class="copyright"> © 2023 Fitenie. All rights reserved</p>
+       </section>
+     </section>
+   </body>
+   </html>
