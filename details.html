@@ -24,27 +24,32 @@
   <!-- Header Section -->
   <header>
     <h1 class="logo">Recipe</h1>
-    <nav>
-      <ul>
-        <li><a href="http://127.0.0.1:5500/Recipe-AD/index.html">Home</a></li>
-        <li><a href="http://127.0.0.1:5500/Recipe-AD/list.html">Category</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Submit Recipe</a></li>
-      </ul>
+
+    <nav class="navresponsive" id="navsubmit">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/Recipe-AD/index.html">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/Recipe-AD/list.html">Category</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#"><span class="active">Submit Recipe</span></a></li>
+        </ul>
     </nav>
     <section class="header-list-icon">
-      <ul class="menu">
-        <li>
-          <form class="header-list-saarch">
-            <input type="search" class="search-input-list" placeholder="Search Recipe...">
-            <button type="submit" class="search-button-list"><i class="fa fa-search" style="color: #fff;"></i></button>
-          </form>
-        </li>
-        <li><i class="fa-regular fa-heart" style="color: #000;"></i></li>
-        <li><i class="fa fa-sign-in-alt" style="color: #000000;"></i></li>
-      </ul>
-    </section>
-  </header>
+        <ul class="menu">
+            <li>
+                <form class="header-list-saarch">
+                    <input type="search" class="search-input-list" placeholder="Search Recipe...">
+                    <button type="submit" class="search-button-list"><i class="fa fa-search" style="color: #fff;"></i></button>
+                </form>
+            </li>
+         
+            <li><i class="fa-regular fa-heart" style="color: #000;"></i></li>
+            <li><i class="fa fa-sign-in-alt" style="color: #000000;"></i></li>
+        </ul>
+    </section>  
+    
+    <i class="fas fa-bars" id="menu-icon"></i>
+</header>
+
   <!-- start Recipe Detail Page -->
   <section class="Recipe-Detail">
     <section class="Recipe-Detail-hero">
@@ -92,7 +97,6 @@
         <div class="single-instruction">
           <step>
             <p class="p-step">step 1</p>
-            <div></div>
           </step>
           <p>
             Mash the banana. Peel the banana and break it up into several
@@ -104,7 +108,6 @@
         <div class="single-instruction">
           <step>
             <p class="p-step">step 2</p>
-            <div></div>
           </step>
           <p>
             Add flavorings if desired then Stir in the eggs.
@@ -115,7 +118,6 @@
         <div class="single-instruction">
           <step>
             <p class="p-step">step 3</p>
-            <div></div>
           </step>
           <p>
             Heat a pan over medium heat.
@@ -124,7 +126,6 @@
         <div class="single-instruction">
           <step>
             <p class="p-step">step 4</p>
-            <div></div>
           </step>
           <p>
             Cook for about 1 minute.
@@ -133,7 +134,6 @@
         <div class="single-instruction">
           <step>
             <p class="p-step">step 5</p>
-            <div></div>
           </step>
           <p>
             Sprinkle with toppings , then Flip the pancakes.
@@ -148,7 +148,7 @@
           <p class="single-ingredient">1/2 cup flax seed meal</p>
           <p class="single-ingredient">1 cup skim milk</p>
         </section>
-        <divsection>
+        <section>
           <h4>tools</h4>
           <p class="single-tool">Hand Blender</p>
           <p class="single-tool">Large Heavy Pot With Lid</p>

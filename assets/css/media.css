@@ -360,48 +360,22 @@
     flex-wrap: wrap;
   }
 
-  .header-list-icon {
-    width: 100%;
-  }
-
-  .Recipe-details-hero-img {
-    margin-left: 2.5rem;
-    margin-right: 1rem;
-    margin-top: 4.5rem;
-  }
-
-  .Recipe-Detail-tags button {
-    width: 8vw;
-  }
+.logo{
+    font-size: 35px; 
 }
 
-@media (max-width: 991.98px) {
-  .Recipe-details-hero-img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .Recipe-Detail-icons {
-    margin: 2rem 0 1rem;
-  }
-
-  .first-column {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  .Recipe-Detail-content {
-    flex-wrap: wrap;
-  }
-
-  .second-column {
-    min-height: 350px;
-    margin: auto;
-  }
+#navdetails{
+    display: none;
 }
 
-@media (max-width: 600px) {
+.header-icon, .header-list-icon{
+    display: none;
+}
 
+#menu-icon{
+    display: flex;
+    font-size: 20px;
+}
   nav {
     width: 100%;
     margin-bottom: 10px;
@@ -518,10 +492,87 @@
     color: #fff;
   }
 }
+  /* Responsive submit page */
+  @media (max-width: 600px) {
+    header{
+        height: 7rem;
+        padding: 2rem 2rem;
+    }
 
-/* 1399.98px */
-/* 1199.98px */
-/* 991.98px */
-/* 768.98px */
-/* 576.98px */
-/* 375.98px */
+    .logo{
+        font-size: 35px; 
+    }
+
+    #navsubmit{
+        display: none;
+    }
+
+    .header-icon, .header-list-icon{
+        display: none;
+    }
+
+    #menu-icon{
+        display: flex;
+        font-size: 20px;
+    }
+    .submit-container{
+      max-width: 100%;
+      padding: 10px;
+      grid-template-columns: 1fr;
+    }
+    .submit-title{
+      font-size: 30px;
+    }
+    .submit-title-details{
+      font-size: 24px;
+    }
+    .form-submit-details{
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 1200px) {
+    header {
+      flex-wrap: wrap;
+    }
+  .submit-title{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 80px;
+  }
+  .submit-title-details{
+    font-size: 25px;
+  }
+  .form-submit-details{
+    font-size: 24px;
+  }
+ .navresponsive {
+    margin-right: 38px;
+  }
+ .navresponsive ul li a{
+    font-size: 19px;
+
+  }
+  .submit-container{
+    max-width: 85%;
+    padding: 10px;
+  }
+}
+  @media (min-width: 1800px){
+    .submit-title{
+      font-size: 60px;
+    }
+    .form-submit-details{
+      font-size: 26px;
+    }
+    .submit-container{
+      max-width: 90%;
+      padding: 10px;
+    }
+   .navresponsive ul li a{
+      font-size: 25px;
+    }
+  }
+  
+  
+  
+  
