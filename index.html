@@ -16,23 +16,28 @@
     <title>Recipe</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1 class="logo">Recipe</h1>
 
         <nav>
             <ul>
-              <li><a href="#"> <span class="active">Home</span></a></li>
-              <li><a href="#">Category</a></li>
+              <li><a href="http://127.0.0.1:5500/Recipe-AD/index.html"> <span class="active">Home</span></a></li>
+              <li><a href="http://127.0.0.1:5500/Recipe-AD/list.html">Category</a></li>
               <li><a href="#">Contact</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="#">Submit Recipe</a></li>
             </ul>
         </nav>
 
         <section class="header-icon">
-            <i class="fa fa-search" style="color: #000000;"></i>
-            <i class="fa-regular fa-heart" style="color: #000;"></i>
-            <i class="fa fa-sign-in-alt" style="color: #000000;"></i>
-        </section>   
+            <ul class="menu">
+                <li><i class="fa fa-search" style="color: #000000;"></i></li>
+                <li><i class="fa-regular fa-heart" style="color: #000;"></i></li>
+                <li><i class="fa fa-sign-in-alt" style="color: #000000;"></i></li>
+            </ul>
+        </section>  
+        
+        <i class="fas fa-bars" id="menu-icon"></i>
     </header>
     
     <!-- Hero Section -->
@@ -49,9 +54,9 @@
         <h1 class="featured-title">Featured Recipe</h1>
         <h6 class="featured-subtitle">Our best recipes, just choose the recipe, you will find its way
         </h6>
-        <section class="container-cards">
+        <section class="featured-container-cards">
             <section class="featured-contant-card">
-                <img src="./assets/image/card1.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/card1.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon" id="favorite-icon1"><i class="fas fa-heart favorite-icon"></i></span>
                 <section class="contant-card">
                     <h2>Shrimp Fettuccine Alfredo</h2>
@@ -70,7 +75,7 @@
             </section>
 
             <section class="featured-contant-card">
-                <img src="./assets/image/burger.jpg" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/burger.jpg" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>burger Cookies</h2>
@@ -89,7 +94,7 @@
             </section>
 
             <section class="featured-contant-card">
-                <img src="./assets/image/card3.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/card3.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Ricotta, Squash and Honey</h2>
@@ -108,7 +113,7 @@
             </section>
 
             <section class="featured-contant-card">
-                <img src="./assets/image/card4.jpg" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/card4.jpg" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Birria Tacos</h2>
@@ -134,8 +139,8 @@
 
     <!--  section highlighting different recipe categories -->
     <section class="categories-container">
-        <h1 class="featured-title">Recipe Categories</h1>
-        <h6 class="featured-subtitle">Our best recipes, just choose the recipe, you will find its way
+        <h1 class="categories-title">Recipe Categories</h1>
+        <h6 class="categories-subtitle">Our best recipes, just choose the recipe, you will find its way
         </h6>
         <nav id="nav-categories">
             <ul>
@@ -145,9 +150,10 @@
               <li><a href="#">Desserts</a></li>
             </ul>
         </nav>
-        <section class="container-cards" id="categories-cards">
-            <section class="featured-contant-card">
-                <img src="./assets/image/Rectangle 155.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+        <section class="categories-contener-scrol">
+              <section class="categories-container-cards">
+            <section class="categories-contant-card">
+                <img src="./assets/image/Rectangle 155.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon" id="favorite-icon1"><i class="fas fa-heart favorite-icon"></i></span>
                 <section class="contant-card">
                     <h2>Banana Pancakes</h2>
@@ -165,8 +171,8 @@
                 </section>    
             </section>
 
-            <section class="featured-contant-card">
-                <img src="./assets/image/Rectangle 144.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+            <section class="categories-contant-card">
+                <img src="./assets/image/Rectangle 144.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Easy Homemade Pizza Dough</h2>
@@ -184,8 +190,8 @@
                 </section>    
             </section>
 
-            <section class="featured-contant-card">
-                <img src="./assets/image/Rectangle 161.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+            <section class="categories-contant-card">
+                <img src="./assets/image/Rectangle 161.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Shrimp Scampi with Pasta</h2>
@@ -203,8 +209,8 @@
                 </section>    
             </section>
 
-            <section class="featured-contant-card">
-                <img src="./assets/image/Rectangle 200.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+            <section class="categories-contant-card">
+                <img src="./assets/image/Rectangle 200.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Rice with chicken </h2>
@@ -221,8 +227,8 @@
                     <span class="rate-review">207 Reviews</span>
                 </section>    
             </section>
-            <section class="featured-contant-card" id="card">
-                <img src="./assets/image/Rectangle 156.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+            <section class="categories-contant-card">
+                <img src="./assets/image/Rectangle 156.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Rice Like The Rice At Chipotle</h2>
@@ -240,8 +246,8 @@
                 </section>    
             </section>
 
-            <section class="featured-contant-card" id="card">
-                <img src="./assets/image/Rectangle 159.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+            <section class="categories-contant-card">
+                <img src="./assets/image/Rectangle 159.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Air-Fried Crumbed Fish</h2>
@@ -259,8 +265,8 @@
                 </section>    
             </section>
 
-            <section class="featured-contant-card" id="card">
-                <img src="./assets/image/card3.png" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+            <section class="categories-contant-card">
+                <img src="./assets/image/card3.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Ricotta, Squash and Honey</h2>
@@ -278,8 +284,8 @@
                 </section>    
             </section>
 
-            <section class="featured-contant-card" id="card">
-                <img src="./assets/image/card4.jpg" alt="Recipe Image" width="272px" height="200px" style="border-radius:10px 10px 0px 0px;">
+            <section class="categories-contant-card">
+                <img src="./assets/image/card4.jpg" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Birria Tacos</h2>
@@ -297,6 +303,12 @@
                 </section>    
             </section>
         </section>
+        </section>
+      
+        <section class="see-more-Btn">
+             <button class="Btn">See More</button>
+        </section>
+       
     </section>
 
     <!-- Footer Section -->
@@ -311,7 +323,7 @@
                     <li><a href="#" class="footer-nav">About</a></li>
                 </ul>
             </nav>
-            <section class="header-icon">
+            <section class="Footer-icon">
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-youtube"></i>

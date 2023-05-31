@@ -1,4 +1,361 @@
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+
+    header{
+        height: 7rem;
+        padding: 2rem 2rem;
+    }
+
+    .logo{
+        font-size: 35px; 
+    }
+
+    nav{
+        display: none;
+    }
+
+    .header-icon, .header-list-icon{
+        display: none;
+    }
+
+    #menu-icon{
+        display: flex;
+        font-size: 20px;
+    }
+
+    .hero-container{
+        height: 25vh;
+    }
+
+    .hero-title{
+        font-size: 20px;
+    }
+
+    .hero-contant{
+        height: 3vh;
+    }
+
+    .featured-container{
+        margin-top: 4vh;
+        height: 39vh;
+        padding: 0px 2rem;   
+    }
+
+    .featured-title, .categories-title{
+        font-size: 18px;
+        line-height: 3rem;
+    }
+
+    .featured-subtitle, .categories-subtitle{
+        font-size: 8px;
+    }
+
+    .featured-container-cards{
+        width: 100%;
+        height: 33vh;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: auto;
+        
+    }
+
+    .featured-contant-card{
+        width: 22rem;
+        height: 30vh;
+        margin-right: 2vh;
+    }
+
+    img{
+        width: 21.7rem;
+        height: 16vh;
+    }
+
+    .contant-card{
+        height: 9vh;
+        padding: 0.5rem;
+    }
+      
+    .contant-card h2{
+        font-size: 10px;
+    }
+      
+    .contant-card p{
+        font-size: 8px;
+    }
+      
+    .rate-review{
+        font-size: 6px;
+    }
+      
+    .favorite-icon{
+        top: 8px;
+        right: 8px;
+        font-size: 18px;
+    }
+
+    .categories-container{
+        margin-top: 4vh;
+        height: 83vh;
+        padding: 1.5rem 2rem;
+        background-color: rgba(255, 246, 197, 0.5);
+        
+    }
+
+    .categories-contener-scrol{
+        height: 70vh;
+        overflow-y: auto;
+        margin-top: 25px;
+      }
+
+    .categories-container-cards{
+        height: 127vh;
+        row-gap: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 0;
+        
+    }
+    .categories-contant-card{
+        width: 22rem;
+        height: 30vh;
+    }
+
+    #nav-categories{
+        display: flex;
+        margin-top: 2vh;
+    }
+
+    .see-more-Btn{
+        display: none;
+    }
+
+    .Footer-Container{
+        height: 10vh;
+        padding: 0px 2rem;
+    }
+
+    .Footer-icon{
+        font-size: 16px;
+        width: 9rem;
+    }
+   
+    #logo-footer{
+        font-size: 45px;
+    }
+      
+    .copyright{
+       font-size: 10px;
+    } 
+
+    /* Responsive list page */
+    .list-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+        width: 100%;
+        height: 8vh;
+    }
+
+    #saarch{
+        width: 45rem;
+        height: 5vh; 
+    }
+
+    .search-button-list{
+        font-size: 14px;
+    }
+
+    .filter{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 2rem;
+        width: 100%;
+        height:5vh;
+        font-size: 20px;
+    }
+
+    .section-filter-Btn{
+        display: none;
+    }
+
+    .list-categories-container{
+        height: 71vh;
+        padding: 1.5rem 2rem;
+        gap: 4rem;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        overflow-y: auto;
+    }
+
+    .list{
+        display: none;
+    }
+
+    .list-categories-container-cards{
+        height: 127vh;
+        gap: 3vh;
+    }
+
+    .list-categories-contant-card{
+        width: 20.96rem;
+    }
+
+    #list-img{
+        width: 20.7rem;
+        height: 15vh;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    header{
+        width: 100%;
+        padding: 0px 2rem; 
+        height: 5rem;
+    }
+
+    .logo{
+        font-size: 50px; 
+    }
+      
+    .header-icon{
+        width: 10rem;
+    }
+
+    .hero-container{
+        height: 80vh;
+    }
+
+    .hero-title{
+        font-size: 30px;
+    }
+
+    .hero-contant{
+        width: 40rem;
+        height: 5.5vh;
+    }
+
+    .featured-container{
+        margin-top: 7vh;
+        height: 69vh;
+        padding: 0px 2rem;  
+    }
+
+    .featured-title, .categories-title{
+        font-size: 20px;
+        line-height: 3rem;
+    }
+
+    .featured-subtitle, .categories-subtitle{
+        font-size: 10px;
+    }
+
+    .featured-container-cards, .categories-container-cards{
+        width: 100%;
+        height: 55vh;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .featured-contant-card, .categories-contant-card{
+        width: 27rem;
+        height: 55vh;
+    }
+
+    img{
+        width: 26.8rem;
+        height: 31vh;
+    }
+
+    .contant-card{
+        height: 14vh;
+        padding: 1.5rem;
+    }
+      
+    .contant-card h2{
+        font-size: 12px;
+    }
+      
+    .contant-card p{
+        font-size: 11px;
+    }
+
+    .rateing{
+        line-height: 40px;
+        font-size: 15px;
+    }
+      
+    .rate-review{
+        font-size: 11px;
+    }
+      
+    .favorite-icon{
+        top: 8px;
+        right: 8px;
+        font-size: 20px;
+    }
+
+    .categories-container{
+        margin-top: 7vh;
+        height: 150vh;
+        padding: 1.5rem 2rem;
+        background-color: rgba(255, 246, 197, 0.5);
+    }
+
+    .categories-container-cards{
+        height: 126vh;
+        row-gap: 2rem;
+    }
+
+    #nav-categories{
+        display: flex;
+        margin-top: 3.5vh;
+    }
+
+    .see-more-Btn{
+        height: 8vh;
+      }
+      
+    .Btn{
+        font-size: 13px; 
+        width: 10rem;
+        height: 6vh;
+    }
+
+    .Footer-Container{
+        height: 15vh;
+        padding: 0px 2rem;
+    }
+
+    .Footer-icon{
+        font-size: 20px;
+        width: 10rem;
+    }
+   
+    #logo-footer{
+        font-size: 50px;
+    }
+      
+
+    .copyright{
+       font-size: 12px;
+    }
+}
+
+@media (min-width: 1800px) {}@media (max-width: 1200px) {
   header {
     flex-wrap: wrap;
   }
