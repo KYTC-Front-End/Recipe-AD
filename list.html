@@ -41,10 +41,24 @@
                 <li><i class="fa-regular fa-heart" style="color: #000;"></i></li>
                 <li><i class="fa fa-sign-in-alt" style="color: #000000;"></i></li>
             </ul>
-        </section>   
+        </section>  
+        
+        <i class="fas fa-bars" id="menu-icon"></i>
     </header>
-    
+
+    <!-- Hero Section -->
+    <section class="list-search">
+        <form class="header-list-saarch" id="saarch">
+            <input type="search" class="search-input-list" placeholder="Search Recipe...">
+            <button type="submit" class="search-button-list"><i class="fa fa-search" style="color: #fff;"></i></button>
+        </form>
+    </section>
+
     <!-- filter Section -->
+    <section class="filter">
+        <i class="fa-solid fa-filter" style="color: #000000;"></i>
+    </section>
+    
     <section class="section-filter-Btn">
       <button class="filter-btn">Mexican &nbsp; <i class="fas fa-times"></i></button>
       <button class="filter-btn">Italian &nbsp; <i class="fas fa-times"></i></button>
@@ -54,7 +68,7 @@
 
     <!-- categories Section -->
     <section class="list-categories-container">
-        <section>
+        <section class="list">
             <p class="list-para">Cuisine</p>
             <hr class="hr-list"/>
             <ul>
@@ -80,7 +94,7 @@
       
         <section class="list-categories-container-cards">
             <section class="list-categories-contant-card" id="list-card">
-                <img src="./assets/image/Rectangle 155.png" alt="Recipe Image" width="238px" height="150px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/Rectangle 155.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
                 <span class="favorite-icon" id="favorite-icon1"><i class="fas fa-heart favorite-icon"></i></span>
                 <section class="contant-card">
                     <h2>Banana Pancakes</h2>
@@ -99,7 +113,7 @@
             </section>
 
             <section class="list-categories-contant-card" id="list-card">
-                <img src="./assets/image/Rectangle 144.png" alt="Recipe Image" width="238px" height="150px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/Rectangle 144.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Easy Homemade Pizza Dough</h2>
@@ -118,7 +132,7 @@
             </section>
 
             <section class="list-categories-contant-card" id="list-card">
-                <img src="./assets/image/Rectangle 161.png" alt="Recipe Image" width="238px" height="150px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/Rectangle 161.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Shrimp Scampi with Pasta</h2>
@@ -137,7 +151,7 @@
             </section>
 
             <section class="list-categories-contant-card" id="list-card">
-                <img src="./assets/image/Rectangle 200.png" alt="Recipe Image" width="238px" height="150px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/Rectangle 200.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Rice with chicken </h2>
@@ -155,7 +169,7 @@
                 </section>    
             </section>
             <section class="list-categories-contant-card" id="list-card">
-                <img src="./assets/image/Rectangle 156.png" alt="Recipe Image" width="238px" height="150px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/Rectangle 156.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Rice Like The Rice At Chipotle</h2>
@@ -174,7 +188,45 @@
             </section>
 
             <section class="list-categories-contant-card" id="list-card">
-                <img src="./assets/image/Rectangle 159.png" alt="Recipe Image" width="238px" height="150px" style="border-radius:10px 10px 0px 0px;">
+                <img src="./assets/image/Rectangle 159.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Air-Fried Crumbed Fish</h2>
+                    <p> Hamburger Cookies are made from Nilla Wafers,
+                        York Peppermint Patties and melted chocolate!
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">156 Reviews</span>
+                </section> 
+            </section>
+
+            <section class="list-categories-contant-card" id="list-card">
+                <img src="./assets/image/Rectangle 159.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
+                <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
+                <section class="contant-card">
+                    <h2>Air-Fried Crumbed Fish</h2>
+                    <p> Hamburger Cookies are made from Nilla Wafers,
+                        York Peppermint Patties and melted chocolate!
+                    </p>
+                </section>
+                <section class="rateing">
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <i class="fa-solid fa-star" style="color: #e58c07" id="star"></i>
+                    <span class="rate-review">156 Reviews</span>
+                </section>    
+            </section>    
+
+            <section class="list-categories-contant-card" id="list-card">
+                <img src="./assets/image/Rectangle 159.png" alt="Recipe Image" style="border-radius:10px 10px 0px 0px;" id="list-img">
                 <span class="favorite-icon"><i class="far fa-heart favorite-icon" style="color: #fff;"></i></span>
                 <section class="contant-card">
                     <h2>Air-Fried Crumbed Fish</h2>
@@ -191,7 +243,6 @@
                     <span class="rate-review">156 Reviews</span>
                 </section>    
             </section>
-
         </section>
     </section>
 
@@ -207,7 +258,7 @@
                     <li><a href="#" class="footer-nav">About</a></li>
                 </ul>
             </nav>
-            <section class="header-icon">
+            <section class="Footer-icon">
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-youtube"></i>
