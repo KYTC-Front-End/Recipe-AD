@@ -5,7 +5,7 @@
     font-family: 'lato';   
 }
 
-header{
+.header-home, .header-list{
     width:100%;
     /* 3*16=48px */
     height: 3rem;
