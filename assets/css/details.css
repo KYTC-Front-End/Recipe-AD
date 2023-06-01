@@ -5,7 +5,7 @@
   font-family: 'lato';   
 }
 
-header{
+.details-header{
   width:100%;
   height: 3rem;
   padding: 0.5rem 3rem 0.5rem 3rem;
@@ -52,7 +52,7 @@ nav ul li a span.active::after {
   background-color: red; 
 }
 
-.header-icon{
+.details-header-icon, .header-details-icon{
   font-size: 18px;
   cursor: pointer;
 }
@@ -69,11 +69,13 @@ nav ul li a span.active::after {
   display: none;
 }
 
-.hero-contant, .header-list-saarch{
+.hero-contant, .header-details-saarch{
 background-color: #ffffff;
-width: 25rem;
+width: 20rem;
 height: 5vh;
 display: flex;
+border: 1px solid #00000069;
+border-radius: 5px;
 }
 
 .search-input, .search-input-list{
